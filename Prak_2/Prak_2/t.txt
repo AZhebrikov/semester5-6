@@ -1,0 +1,11 @@
+\caption{$y_0=-0.681078049 \; , \; t_2=0.054491750283$ .}
+\caption{$y_0=-6.977892188 \; , \; t_2=0.43614901116$ .}
+
+\begin{wrapfigure}{r}{0.4\textwidth}
+    \includegraphics[width=0.4\textwidth]{img2.png}
+\end{wrapfigure}
+
+\begin{wrapfigure}{r}{0.4\textwidth}
+    \includegraphics[width=0.4\textwidth]{img3.png}
+\end{wrapfigure}
+

@@ -1,0 +1,95 @@
+\documentclass[a4paper,10pt]{article}
+
+\usepackage{geometry}
+\geometry{top=15mm}
+\geometry{bottom=30mm}
+\geometry{left=10mm}
+\geometry{right=20mm}
+\linespread{1}
+\setlength{\parindent}{12pt}
+\setlength{\parskip}{8pt}
+
+\usepackage{titleps}
+
+\newpagestyle{main}
+{
+  \setheadrule{0.4pt}
+  \sethead{}{}{}
+  \setfootrule{0,4pt}
+  \setfoot{}{\thepage}{}
+}
+\usepackage{color}
+\usepackage[english,russian]{babel}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsthm,amsmath,amsfonts,amssymb,mathtools}
+\usepackage{indentfirst}
+\usepackage{lipsum}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{wrapfig}
+
+\newcommand{\partdef}[2]{\frac{\partial \mathnormal{#1}}{\partial \mathnormal{#2}}}
+
+
+
+
+\begin{document}
+
+опрпр
+\tiny 
+gjdld
+\small
+lgmdkgndj
+\Huge
+fjvxjhv
+
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
+\hline
+$T$&$\Delta_{loc}$&$Steps$&$|x(T)|$&$|y(T)-\mathds{cos}(T)|$&$\Delta x(\cdot)$&$\Delta y(\cdot)$&$\delta_K(T)$&$R_x$&$R_y$\\
+\cline{1-10}
+&$ 10^{-08} $&$  6  $&$ 1.99\cdot 10^{-08} $&$ 1.26\cdot 10^{-08} $&$ 1.45\cdot 10^{-08} $&$ 1.42\cdot 10^{-08} $&$ 2.04\cdot 10^{-08} $&$ $& \\
+\cline{2-8}
+$\pi $&$ 10^{-10} $&$ 10 $&$ 2.24\cdot 10^{-10} $&$ 3.42\cdot 10^{-10} $&$ 2.57\cdot 10^{-10} $&$ 2.57\cdot 10^{-10} $&$ 3.61\cdot 10^{-10} $&$ 88.73 $&$ 36.41 $\\
+\cline{2-8}
+&$ 10^{-12} $&$ 17 $&$ 2.29\cdot 10^{-12} $&$ 6.71\cdot 10^{-12} $&$ 4.55\cdot 10^{-12} $&$ 4.48\cdot 10^{-12} $&$ 6.29\cdot 10^{-12} $&$ $& \\
+\cline{1-10}
+&$ 10^{-08} $&$ 53 $&$ 2.00\cdot 10^{-07} $&$ 1.27\cdot 10^{-07} $&$ 1.44\cdot 10^{-07} $&$ 1.44\cdot 10^{-07} $&$ 2.05\cdot 10^{-07} $&$ $&\\
+\cline{2-8}
+$10\cdot \pi $&$ 10^{-10} $&$ 93 $&$ 2.23\cdot 10^{-09} $&$ 3.41\cdot 10^{-09} $&$ 2.56\cdot 10^{-09} $&$ 2.56\cdot 10^{-09} $&$ 3.60\cdot 10^{-09} $&$89.82$&$37.03$\\
+\cline{2-8}
+&$ 10^{-12} $&$ 165 $&$ 2.31\cdot 10^{-11} $&$ 6.79\cdot 10^{-11} $&$ 4.57\cdot 10^{-11} $&$ 4.57\cdot 10^{-11} $&$ 6.39\cdot 10^{-11} $&$ $&\\
+\cline{1-10}
+&$10^{-08}$&$ 522$&$ 2.00\cdot 10^{-06}$&$  1.27\cdot 10^{-06}$&$  1.44\cdot 10^{-06}$&$  1.44\cdot 10^{-06}$&$  2.05\cdot 10^{-06}$&&\\
+\cline{2-8}
+$10^2 \cdot \pi$&$10^{-10}$&$ 926$&$ 2.24\cdot 10^{-08}$&$  3.43\cdot 10^{-08}$&$  2.57\cdot 10^{-08}$&$  2.57\cdot 10^{-08}$&$  3.62\cdot 10^{-08}$&$89.41$&$36.87$\\ 
+\cline{2-8}
+&$10^{-12}$&$ 1645$&$ 2.31\cdot 10^{-10}$&$  6.80\cdot 10^{-10}$&$  4.58\cdot 10^{-10}$&$  4.58\cdot 10^{-10}$&$  6.40\cdot 10^{-10}$&&\\
+\cline{1-10}
+&$10^{-08}$&$ 5216$&$  2.00\cdot 10^{-05}$&$  1.27\cdot 10^{-05}$&$  1.44\cdot 10^{-05}$&$  1.44\cdot 10^{-05}$&$  2.05\cdot 10^{-05}$& &\\
+\cline{2-8}
+$10^3 \cdot \pi$&$10^{-10}$&$ 9252$&$  2.24\cdot 10^{-07}$&$  3.43\cdot 10^{-07}$&$  2.57\cdot 10^{-07}$&$  2.57\cdot 10^{-07}$&$  3.62\cdot 10^{-07}$&$89.49$&$36.90$\\ 
+\cline{2-8}
+&$10^{-12}$&$ 16441$&$  2.31\cdot 10^{-09}$&$  6.80\cdot 10^{-09}$&$  4.58\cdot 10^{-09}$&$  4.58\cdot 10^{-09}$&$  6.40\cdot 10^{-09}$& &\\
+\cline{1-10}
+&$10^{-08}$&$ 52155$&$  2.00\cdot 10^{-04}$&$  1.27\cdot 10^{-04}$&$  1.44\cdot 10^{-04}$&$  1.44\cdot 10^{-04}$&$  2.05\cdot 10^{-04}$& &\\
+\cline{2-8}
+$10^4 \cdot \pi$&$10^{-10}$&$ 92519$&$  2.24\cdot 10^{-06}$&$  3.43\cdot 10^{-06}$&$  2.57\cdot 10^{-06}$&$  2.57\cdot 10^{-06}$&$  3.62\cdot 10^{-06}$&$89.48$&$36.90$\\
+\cline{2-8}
+&$10^{-12}$&$ 164407$&$  2.25\cdot 10^{-08}$&$  6.80\cdot 10^{-08}$&$  4.58\cdot 10^{-08}$&$  4.58\cdot 10^{-08}$&$  6.40\cdot 10^{-08}$& &\\
+\cline{1-10}
+&$10^{-08}$&$ 521580$&$  2.00\cdot 10^{-03}$&$  1.27\cdot 10^{-03}$&$  1.44\cdot 10^{-03}$&$  1.44\cdot 10^{-03}$&$  2.05\cdot 10^{-03}$& &\\
+\cline{2-8}
+$10^5 \cdot \pi$&$10^{-10}$&$ 925185$&$  2.24\cdot 10^{-05}$&$  3.43\cdot 10^{-05}$&$  2.57\cdot 10^{-05}$&$  2.57\cdot 10^{-05}$&$  3.62\cdot 10^{-05}$&$89.60$&$36.85$\\
+\cline{2-8}
+&$10^{-12}$&$ 1644068$&$  2.45\cdot 10^{-07}$&$  6.80\cdot 10^{-07}$&$  4.58\cdot 10^{-07}$&$  4.58\cdot 10^{-07}$&$  6.40\cdot 10^{-07}$& &\\
+\cline{1-10}
+&$10^{-08}$&$ 5219496$&$  2.02\cdot 10^{-02}$&$  1.26\cdot 10^{-02}$&$  1.44\cdot 10^{-02}$&$  1.44\cdot 10^{-02}$&$  2.05\cdot 10^{-02}$& &\\
+\cline{2-8}
+$10^6 \cdot \pi$&$10^{-10}$&$ 9252025$&$  2.24\cdot 10^{-04}$&$  3.43\cdot 10^{-04}$&$  2.57\cdot 10^{-04}$&$  2.57\cdot 10^{-04}$&$  3.62\cdot 10^{-04}$&$89.99$&$36.38$\\
+\cline{2-8}
+&$10^{-12}$&$ 16440684$&$  2.22\cdot 10^{-06}$&$  6.80\cdot 10^{-06}$&$  4.58\cdot 10^{-06}$&$  4.58\cdot 10^{-06}$&$  6.40\cdot 10^{-06}$& &\\
+\cline{1-10}
+\end{tabular}
+
+\end{document}
